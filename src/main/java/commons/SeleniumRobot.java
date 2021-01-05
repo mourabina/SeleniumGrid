@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class SeleniumRobot extends BaseTest {
 
 	public static void implicitlyWait(Long timeOut) {
-		webDriver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+		getwebDriver().manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class SeleniumRobot extends BaseTest {
 	 */
 	public static boolean existElementWeb(String xpath) {
 
-		return webDriver.findElements(By.xpath(xpath)).size() != 0;
+		return getwebDriver().findElements(By.xpath(xpath)).size() != 0;
 
 	}
 
@@ -55,7 +55,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @param element
 	 */
 	public static void DoubleClickWeb(WebElement element) {
-		Actions DoubleClick = new Actions(webDriver);
+		Actions DoubleClick = new Actions(getwebDriver());
 		DoubleClick.doubleClick(element).build().perform();
 	}
 
@@ -66,7 +66,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @param texto
 	 */
 	public static void escrever(WebElement element, String texto) {
-		Actions actions = new Actions(webDriver);
+		Actions actions = new Actions(getwebDriver());
 		actions.moveToElement(element);
 		actions.click();
 		actions.sendKeys(texto).build().perform();
@@ -78,7 +78,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @param element
 	 */
 	public static void MoveToElementWeb(WebElement element) {
-		Actions MoveToElement = new Actions(webDriver);
+		Actions MoveToElement = new Actions(getwebDriver());
 		MoveToElement.moveToElement(element).perform();
 	}
 
@@ -98,7 +98,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @return quantidade
 	 */
 	public static int countElements(String element) {
-		return webDriver.findElements(By.xpath(element)).size();
+		return getwebDriver().findElements(By.xpath(element)).size();
 	}
 
 	/**
@@ -128,7 +128,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @param rolagem
 	 */
 	public static void scroll(int rolagem) {
-		JavascriptExecutor jse = (JavascriptExecutor) webDriver;
+		JavascriptExecutor jse = (JavascriptExecutor) getwebDriver();
 		jse.executeScript("window.scrollBy(0," + rolagem + ")", "");
 	}
 
