@@ -33,6 +33,10 @@ public class LoginFuncionalidade extends BaseTest {
 		this.login.getBtnEntrar().click();
 	}
 	
+	public void acessarPaginaNovoUsuario() {
+		this.login.getMenuNovoUsuario().click();
+	}
+	
 	public List<String> retornaMenagens(){
 		List<WebElement> lista = this.login.getListaMensagens();
 		List<String> listaString = new ArrayList<String>();

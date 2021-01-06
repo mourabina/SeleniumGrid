@@ -26,6 +26,10 @@ public class CriarContaFuncionalidade extends BaseTest {
 		VariaveisEstaticas.setNOME_CONTA(nome);
 	}
 	
+	public void digitarNomeConta(String conta) {
+		this.conta.getInputNome().sendKeys(conta);
+	}
+	
 	public void clicarBotaoCadastrar() {
 		this.conta.getBtnSalvar().click();
 	}

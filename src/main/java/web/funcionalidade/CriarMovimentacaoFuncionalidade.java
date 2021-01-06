@@ -14,7 +14,7 @@ import web.pages.CriarMovimentacaoPage;
 public class CriarMovimentacaoFuncionalidade extends BaseTest {
 	
 	private CriarMovimentacaoPage movi;
-	
+		
 	public CriarMovimentacaoFuncionalidade() {
 		this.movi = new CriarMovimentacaoPage(getwebDriver());
 	}
@@ -30,7 +30,7 @@ public class CriarMovimentacaoFuncionalidade extends BaseTest {
 		conta.selectByVisibleText(VariaveisEstaticas.getNOME_CONTA());
 	}
 	
-	public void criarContaComSucesso() {
+	public void criarMovimentacaoComSucesso() {
 		this.selcionarTipoReceita("Receita");
 		this.movi.getInputDataMovimentacao().sendKeys(GeracaoData.retornaDataAtual());
 		this.movi.getInputDataPagamento().sendKeys(GeracaoData.retornaDataAtual());
@@ -43,7 +43,7 @@ public class CriarMovimentacaoFuncionalidade extends BaseTest {
 		this.movi.getBtnSalvar().click();
 	}
 	
-	public void criarContaSemCampoDataMovimentacao() {
+	public void criarMovimentacaoSemCampoDataMovimentacao() {
 		this.selcionarTipoReceita("Receita");
 		this.movi.getInputDataPagamento().sendKeys(GeracaoData.retornaDataAtual());
 		this.movi.getInputDescricao().sendKeys("Teste de Automação Selenium Grid");
@@ -55,7 +55,7 @@ public class CriarMovimentacaoFuncionalidade extends BaseTest {
 		this.movi.getBtnSalvar().click();
 	}
 	
-	public void criarContaSemCampoDataPagamento() {
+	public void criarMovimentacaoSemCampoDataPagamento() {
 		this.selcionarTipoReceita("Receita");
 		this.movi.getInputDataMovimentacao().sendKeys(GeracaoData.retornaDataAtual());
 		this.movi.getInputDescricao().sendKeys("Teste de Automação Selenium Grid");
@@ -67,7 +67,7 @@ public class CriarMovimentacaoFuncionalidade extends BaseTest {
 		this.movi.getBtnSalvar().click();
 	}
 	
-	public void criarContaSemCampoDescricao() {
+	public void criarMovimentacaoSemCampoDescricao() {
 		this.selcionarTipoReceita("Receita");
 		this.movi.getInputDataMovimentacao().sendKeys(GeracaoData.retornaDataAtual());
 		this.movi.getInputDataPagamento().sendKeys(GeracaoData.retornaDataAtual());

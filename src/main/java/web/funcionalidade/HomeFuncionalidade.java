@@ -2,6 +2,7 @@ package web.funcionalidade;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import commons.BaseTest;
 import commons.funcionalidade.VariaveisEstaticas;
@@ -38,6 +39,7 @@ public class HomeFuncionalidade extends BaseTest {
 	}
 
 	public String retornaMenagem() {
+		wait.until(ExpectedConditions.visibilityOf(this.home.getMsgSucesso()));
 		return this.home.getMsgSucesso().getText();
 	}
 
