@@ -10,7 +10,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                    | Nome do executor | Sprint |
-      | 7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
+      |  7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Nome
     Quando clico no botao Cadastrar
@@ -21,7 +21,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
+      |  8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Email
     Quando clico no botao Cadastrar
@@ -32,7 +32,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
+      |  9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Senha
     Quando clico no botao Cadastrar
@@ -48,13 +48,13 @@ Funcionalidade: Novo Usuario
     E preencho todos os campos corretamente
     Quando clico no botao Cadastrar
     Entao sistema exibi a mensagem "Usuário inserido com sucesso" na tela Novo Usuario
-    
-    @Teste00007 @webSenhorBarriga
+
+  @Teste00007 @webSenhorBarriga
   Cenario: 7 - Criar Usuario Preenchendo Apenas Campo 'Nome'
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                    | Nome do executor | Sprint |
-      | 7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
+      |  7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Nome
     Quando clico no botao Cadastrar
@@ -65,7 +65,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
+      |  8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Email
     Quando clico no botao Cadastrar
@@ -76,7 +76,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
+      |  9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Senha
     Quando clico no botao Cadastrar
@@ -92,13 +92,13 @@ Funcionalidade: Novo Usuario
     E preencho todos os campos corretamente
     Quando clico no botao Cadastrar
     Entao sistema exibi a mensagem "Usuário inserido com sucesso" na tela Novo Usuario
-    
-    @Teste00007 @webSenhorBarriga
+
+  @Teste00007 @webSenhorBarriga
   Cenario: 7 - Criar Usuario Preenchendo Apenas Campo 'Nome'
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                    | Nome do executor | Sprint |
-      | 7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
+      |  7 | Teste - 07   | Criar Usuario Preenchendo Apenas Campo 'Nome' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Nome
     Quando clico no botao Cadastrar
@@ -109,7 +109,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
+      |  8 | Teste - 08   | Criar Usuario Preenchendo Apenas Campo 'Email' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Email
     Quando clico no botao Cadastrar
@@ -120,7 +120,7 @@ Funcionalidade: Novo Usuario
     Dado que estou no site do Senhor Barriga
     E estou executando o teste
       | id | Numero do CT | Nome do CT                                     | Nome do executor | Sprint |
-      | 9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
+      |  9 | Teste - 09   | Criar Usuario Preenchendo Apenas Campo 'senha' | Hilario Bina     | T1     |
     E acesso a pagina Criar Novo Usuario
     E preencho apenas o campo Senha
     Quando clico no botao Cadastrar
