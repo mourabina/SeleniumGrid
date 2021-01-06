@@ -10,13 +10,16 @@ import com.github.javafaker.Faker;
 import commons.BaseTest;
 import commons.funcionalidade.VariaveisEstaticas;
 import web.pages.CriarContaPage;
+import web.pages.HomePage;
 
 public class CriarContaFuncionalidade extends BaseTest {
 	
 	private CriarContaPage conta;
+	private HomePage home;
 	
 	public CriarContaFuncionalidade() {
 		this.conta = new CriarContaPage(getwebDriver());
+		this.home = new HomePage(getwebDriver());
 	}
 	
 	public void digitarNomeConta() {
@@ -27,7 +30,10 @@ public class CriarContaFuncionalidade extends BaseTest {
 	}
 	
 	public void digitarNomeConta(String conta) {
+		this.home.getMenuContas().click();
+		this.home.getSubMenuAdicionar().click();
 		this.conta.getInputNome().sendKeys(conta);
+		this.conta.getBtnSalvar().click();
 	}
 	
 	public void clicarBotaoCadastrar() {
