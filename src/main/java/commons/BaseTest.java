@@ -10,9 +10,11 @@ import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -55,8 +57,13 @@ public class BaseTest {
 		}
 		if (PropiedadeEnum.TIPO_EXECUCAO == TipoExecucao.GRID) {
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setBrowserName("chrome");
+			cap.setPlatform(Platform.WINDOWS);
+			ChromeOptions options = new ChromeOptions();
+			options.merge(cap);
+			options.setCapability("browser-version", "79.0");
 			try {
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 				System.out.println("Passou por aqui");
 				wait = new WebDriverWait(driver, 100);
 			} catch (MalformedURLException e) {

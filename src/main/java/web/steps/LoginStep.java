@@ -19,7 +19,7 @@ public class LoginStep {
 	}
 
 	@Dado("que estou no site do Senhor Barriga")
-	public void queEstouNoSiteDoSenhorBarriga() {
+	public void queEstouNoSiteDoSenhorBarriga() throws Exception {
 		this.login.acessarSite();
 	}
 
@@ -40,7 +40,7 @@ public class LoginStep {
 	}
 
 	@Dado("que estou logado no Site do Senhor Barriga {string} e {string}")
-	public void efetuarAutenticacao(String email, String senha) {
+	public void efetuarAutenticacao(String email, String senha) throws Exception {
 		this.queEstouNoSiteDoSenhorBarriga();
 		this.digitoEmailESenha(email, senha);
 		this.login.clicarBotaoEntra();

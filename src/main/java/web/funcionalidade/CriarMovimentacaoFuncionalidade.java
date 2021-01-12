@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import commons.BaseTest;
@@ -14,12 +15,14 @@ import web.pages.CriarMovimentacaoPage;
 public class CriarMovimentacaoFuncionalidade extends BaseTest {
 	
 	private CriarMovimentacaoPage movi;
+
 		
 	public CriarMovimentacaoFuncionalidade() {
 		this.movi = new CriarMovimentacaoPage(getwebDriver());
 	}
 	
 	public void selcionarTipoReceita(String receita) {
+		wait.until(ExpectedConditions.visibilityOf(this.movi.getSelectTipoReceita()));
 		Select recei = new Select(this.movi.getSelectTipoReceita());
 		recei.selectByVisibleText(receita);
 		

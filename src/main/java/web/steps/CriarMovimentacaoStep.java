@@ -5,13 +5,16 @@ import org.junit.Assert;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import web.funcionalidade.CriarMovimentacaoFuncionalidade;
+import web.funcionalidade.HomeFuncionalidade;
 
 public class CriarMovimentacaoStep {
 
 	private CriarMovimentacaoFuncionalidade movi;
+	private HomeFuncionalidade home;
 
 	public CriarMovimentacaoStep() {
 		this.movi = new CriarMovimentacaoFuncionalidade();
+		this.home = new HomeFuncionalidade();
 	}
 
 	@Quando("crio uma movimentacao com dados validos")
@@ -21,6 +24,7 @@ public class CriarMovimentacaoStep {
 
 	@Quando("crio uma movimentacao sem o campo Data da Movimentacao")
 	public void crioMovimentacaoSemCampoDataDaMovimentacao() {
+		this.home.clicarMenuCriarMovimentacao();
 		this.movi.criarMovimentacaoSemCampoDataMovimentacao();
 	}
 	

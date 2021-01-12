@@ -17,8 +17,9 @@ public class LoginFuncionalidade extends BaseTest {
 	}
 	
 	
-	public void acessarSite() {
+	public void acessarSite() throws Exception {
 		getwebDriver().get("http://srbarriga.herokuapp.com/");
+		
 	}
 	
 	public void digitarCampoEmail(String email) {
